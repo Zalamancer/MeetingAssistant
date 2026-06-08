@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>com.yourcompany.MeetingAssistant</string>
+    <key>CFBundleName</key>
+    <string>MeetingAssistant</string>
+    <key>CFBundleDisplayName</key>
+    <string>Meeting Assistant</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleExecutable</key>
+    <string>MeetingAssistant</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+    <key>LSUIElement</key>
+    <true/>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+
+    <!-- Privacy Permissions -->
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Meeting Assistant needs microphone access to capture meeting audio for transcription.</string>
+    <key>NSAppleEventsUsageDescription</key>
+    <string>Meeting Assistant needs automation access to detect active meetings.</string>
+    <key>NSScreenCaptureUsageDescription</key>
+    <string>Meeting Assistant needs screen capture access to capture system audio from meetings.</string>
+
+    <!-- Background Modes -->
+    <key>BGTaskSchedulerPermittedIdentifiers</key>
+    <array>
+        <string>com.yourcompany.MeetingAssistant.refresh</string>
+    </array>
+
+    <!-- App Sandbox (for distribution) -->
+    <key>com.apple.security.app-sandbox</key>
+    <false/>
+    <key>com.apple.security.device.audio-input</key>
+    <true/>
+    <key>com.apple.security.automation.apple-events</key>
+    <true/>
+</dict>
+</plist>
